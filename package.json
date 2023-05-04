@@ -1,0 +1,22 @@
+{
+  "name": "color-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "sass -w sass/:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJHV/color-picker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielJHV/color-picker/issues"
+  },
+  "homepage": "https://github.com/DanielJHV/color-picker#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
