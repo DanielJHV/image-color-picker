@@ -1,0 +1,28 @@
+$color-primary: #003062;
+$color-secondary: #435d95;
+$color-light: #e5f0ff;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: $color-secondary;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
