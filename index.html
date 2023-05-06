@@ -19,7 +19,31 @@
       <h1 class="heading-primary">Image Color Picker</h1>
     </header>
     <main class="main">
-    </main>
+      <div class="container">
+        <div class="img-container">
+          <img class="image" src="hidden-ball.png" alt="Image" />
+        </div>
+        <div class="options-container">
+          <input type="file" id="file" acceskey="image/*" />
+          <label class="label-upload" for="file">Upload File</label>
+          <button class="btn-pick">Pick Color</button>
+        </div>
+        <div class="result">
+          <div class="result__hex">
+            <input type="text" id="hex-input" />
+            <button class="copy-btn">
+              <ion-icon class="copy-icon" name="copy-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="result__rgb">
+            <input type="text" id="rgb-input" />
+            <button class="copy-btn">
+              <ion-icon class="copy-icon" name="copy-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="color-picked"></div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p>Copyright &copy; 2023 DanielJHV</p>
@@ -31,5 +55,7 @@
         </svg>
       </a>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

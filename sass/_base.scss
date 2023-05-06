@@ -1,6 +1,8 @@
-$color-primary: #003062;
-$color-secondary: #435d95;
-$color-light: #e5f0ff;
+$color-primary: #343434;
+$color-secondary: #626262;
+$color-btn-hover: #484747;
+
+$color-light: #f7f7f7;
 
 @mixin flexCenter {
   display: flex;
