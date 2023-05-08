@@ -25,17 +25,17 @@
 
 .img-container {
   @include flexCenter;
-  height: auto;
+  height: 40rem;
   width: auto;
   margin-bottom: 2.4rem;
   padding: 0.8rem;
   border: 2px solid $color-primary;
   border-radius: 13px;
+  overflow: hidden;
 }
 
 .image {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 40rem;
 }
 
 .options-container {
@@ -48,11 +48,11 @@
 
   .label-upload,
   .btn-pick {
-    text-align: center;
+    @include flexCenter;
     padding: 1rem;
     background-color: $color-primary;
     color: $color-light;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 5px;
     font-size: 2rem;
     font-family: inherit;
@@ -62,6 +62,13 @@
       background-color: $color-btn-hover;
     }
   }
+}
+
+.btn-pick.locked {
+  background-color: $color-light;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  pointer-events: none;
 }
 
 #file {
@@ -117,7 +124,7 @@
   grid-row: 1/-1;
   // justify-self: center;
   align-self: center;
-  height: 10rem;
+  height: 80%;
   border: 9px solid $color-secondary;
   border-radius: 13px;
 }
