@@ -1,7 +1,6 @@
 $color-primary: #343434;
 $color-secondary: #626262;
 $color-btn-hover: #484747;
-
 $color-light: #f7f7f7;
 
 @mixin flexCenter {
@@ -18,6 +17,10 @@ $color-light: #f7f7f7;
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 46em) {
+    font-size: 40%;
+  }
 }
 
 body {

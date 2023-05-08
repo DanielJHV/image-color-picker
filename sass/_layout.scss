@@ -4,11 +4,6 @@
   padding: 2rem;
 }
 
-.heading-primary {
-  color: $color-light;
-  font-size: 4.8rem;
-}
-
 .main {
   @include flexCenter;
 }
@@ -122,7 +117,6 @@
 .color-picked {
   grid-column: 1/2;
   grid-row: 1/-1;
-  // justify-self: center;
   align-self: center;
   height: 80%;
   border: 9px solid $color-secondary;
@@ -142,6 +136,14 @@
     font-weight: 400;
     font-family: sans-serif;
     letter-spacing: -0.75px;
+
+    @media screen and (max-width: 46em) {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media screen and (max-width: 46em) {
+    padding: 2.2rem;
   }
 }
 
@@ -151,5 +153,9 @@
 
   &:hover {
     fill: #eee;
+  }
+
+  @media screen and (max-width: 46em) {
+    height: 2.6rem;
   }
 }
