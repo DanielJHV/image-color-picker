@@ -23,14 +23,14 @@
   height: 40rem;
   width: auto;
   margin-bottom: 2.4rem;
-  padding: 0.8rem;
+  padding: 0 1rem;
   border: 2px solid $color-primary;
   border-radius: 13px;
   overflow: hidden;
 }
 
 .image {
-  max-width: 40rem;
+  height: 100%;
 }
 
 .options-container {
